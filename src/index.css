@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "Han Zi";
+		font-display: swap;
+		font-weight: 400;
+		src:
+			url("/fonts/Han-Zi-Regular.woff2") format("woff2"),
+			url("/fonts/Han-Zi-Regular.woff") format("woff");
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "DM Sans";
+		font-display: swap;
+		font-weight: 400;
+		src:
+			url("/fonts/DMSans-Regular.woff2") format("woff2"),
+			url("/fonts/DMSans-Regular.woff") format("woff");
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "DM Sans";
+		font-display: swap;
+		font-weight: 600;
+		src:
+			url("/fonts/DMSans-Medium.woff2") format("woff2"),
+			url("/fonts/DMSans-Medium.woff") format("woff");
+		font-style: normal;
+	}
+}
+
+.scroll-container {
+	-webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	border: 1px solid;
+}
+
+::-webkit-scrollbar-thumb {
+	border: 1px solid #ffbe3b;
+	background-color: #a51c2c;
+}
